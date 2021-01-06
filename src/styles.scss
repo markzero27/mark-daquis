@@ -1,1 +1,59 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@700&family=Montserrat:wght@800&display=swap");
+
+.bg-dark {
+  background-color: #202020 !important;
+}
+
+.text-dark {
+  color: #202020;
+}
+
+.text-primary {
+  color: #fc795b !important;
+}
+
+.text-secondary {
+  color: #763433 !important;
+}
+
+.bg-primary {
+  background: #fc795b !important;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-pt-sans {
+  font-family: "PT Sans", "Montserrat";
+}
+
+.font-benchnine {
+  font-family: "BenchNine";
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(243, 81, 81, 0.519);
+}
+
+.text-shadow-md {
+  text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow-none {
+  text-shadow: none;
+}
