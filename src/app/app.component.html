@@ -1,7 +1,7 @@
 <div class="bg-dark relative w-screen">
   <header class="p-4 w-screen flex justify-between items-center fixed z-40">
     <div class="flex justify-center">
-      <div class="flex flex-col mt-1">
+      <div class="flex flex-col mt-1" (click)="isNavToggled = !isNavToggled">
         <div class="flex mb-1">
           <span class="w-2 h-2 bg-gray-600 opacity-60 mr-1 rounded-full e"> </span>
           <span class="w-6 h-2 bg-primary"> </span>
@@ -30,9 +30,24 @@
     </ul>
   </header>
 
-  <!-- <nav class="fixed w-45-p h-screen bg-white z-50 shadow-2xl">
-    asdasd
-  </nav> -->
+  <nav class="fixed w-45-p h-screen bg-white z-30 shadow-2xl" *ngIf="isNavToggled">
+   <ul class="h-full flex flex-col justify-center items-center font-benchnine">
+    <li class="mb-2 text-5xl">
+      <a href="#home" (click)="toggleDrawer()">HOME</a>
+    </li>
+    <li class="mb-2 text-5xl">
+      <a href="#about" (click)="toggleDrawer()">ABOUT</a>
+    </li>
+    <li class="mb-2 text-5xl">
+      <a href="#projects" (click)="toggleDrawer()">PROJECTS</a>
+    </li>
+    <li class="mb-2 text-5xl">
+      <a href="#contact" (click)="toggleDrawer()">CONTACT</a>
+    </li>
+   </ul>
+  </nav>
+
+  <div *ngIf="isNavToggled" class="w-screen h-screen bg-black opacity-60 fixed top-0 left-0 right-0 bottom-0 z-20"></div>
 
   <article class=" bg-dark h-screen flex flex-col m-auto z-10 relative" id="home"> 
     <div class="flex justify-center items-center flex-1">
