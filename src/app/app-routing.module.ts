@@ -4,7 +4,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 const routes: Routes = [];
 
 const routerOptions: ExtraOptions = {
-  useHash: true,
+  useHash: false,
   anchorScrolling: 'enabled',
   onSameUrlNavigation: 'reload',
 };

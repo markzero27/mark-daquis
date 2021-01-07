@@ -13,6 +13,10 @@
   min-width: 300px;
 }
 
+.social {
+  background-color: #202020c3;
+}
+
 .sign {
   top: -90px;
 }
@@ -57,4 +61,9 @@
 
 .w-45-p {
   width: 45%;
+}
+
+.link:hover {
+  color: #fc795b;
+  font-weight: 900;
 }

@@ -1,4 +1,4 @@
-<div class="bg-dark relative w-screen">
+<div class="bg-dark relative h-screen w-screen ">
 
   <div *ngIf="isNavToggled" class="w-screen h-screen bg-black opacity-60 fixed top-0 left-0 right-0 bottom-0 z-20" (click)="toggleDrawer()"></div>
 
@@ -33,18 +33,18 @@
     </ul>
   </header>
 
-  <nav class="fixed w-45-p h-screen bg-white z-30 shadow-2xl" *ngIf="isNavToggled">
+  <nav class="fixed w-full sm:w-1/3  h-screen bg-white z-30 shadow-2xl" *ngIf="isNavToggled">
    <ul class="h-full flex flex-col justify-center items-center font-benchnine ">
-    <li class="mb-2 text-5xl">
+    <li class="mb-2 text-5xl link">
       <a  [routerLink]="['/']"  fragment="home" (click)="toggleDrawer()">HOME</a>
     </li>
-    <li class="mb-2 text-5xl">
+    <li class="mb-2 text-5xl link">
       <a [routerLink]="['/']" fragment="about" (click)="toggleDrawer()">ABOUT</a>
     </li>
-    <li class="mb-2 text-5xl">
+    <li class="mb-2 text-5xl link">
       <a [routerLink]="['/']" fragment="projects" (click)="toggleDrawer()">PROJECTS</a>
     </li>
-    <li class="mb-2 text-5xl">
+    <li class="mb-2 text-5xl link">
       <a [routerLink]="['/']" fragment="contact" (click)="toggleDrawer()">CONTACT</a>
     </li>
    </ul>
