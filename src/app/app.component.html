@@ -1,5 +1,5 @@
 <div class="bg-dark relative w-screen">
-  <nav class="p-4 w-screen flex justify-between items-center fixed z-50">
+  <header class="p-4 w-screen flex justify-between items-center fixed z-40">
     <div class="flex justify-center">
       <div class="flex flex-col mt-1">
         <div class="flex mb-1">
@@ -28,16 +28,19 @@
         <img src="assets/icons/git.png" alt="">
       </button>
     </ul>
-  </nav>
+  </header>
 
+  <!-- <nav class="fixed w-45-p h-screen bg-white z-50 shadow-2xl">
+    asdasd
+  </nav> -->
 
-  <section class=" bg-dark h-screen flex flex-col m-auto z-10 relative" id="home"> 
+  <article class=" bg-dark h-screen flex flex-col m-auto z-10 relative" id="home"> 
     <div class="flex justify-center items-center flex-1">
       <div class="relative blinking">
   
         <div>
           <img src="assets/images/md.png" alt="" class="absolute sign hidden md:block">
-          <h1 class="text-6xl font-montserrat font-extrabold text-primary text-shadow z-20 text-center relative name">
+          <h1 class="text-5xl md:text-7xl font-montserrat font-extrabold text-primary text-shadow z-20 text-center relative name">
             Mark Daquis</h1>
           <p class="text-gray-400 text-center text-lg relative mb-5">
             Software Developer
@@ -59,16 +62,16 @@
         Scroll Down
       </p>
     </div>
-  </section>
+  </article>
 
 
-  <section class="bg-gray-50 p-12 relative flex items-center " id="projects">
+  <article class="bg-gray-50 p-12 relative flex items-center " id="projects">
     <div class="container mx-auto w-full">
-      <h1 class="text-4xl md:text-6xl font-benchnine text-dark mb-10 text-center">SOME PROJECTS </h1>
+      <h1 class="text-4xl md:text-6xl font-montserrat text-dark mb-10 text-center ">SOME PROJECTS </h1>
       
       <div class="md:flex md:p-12 mb-2">
         <div class="flex flex-col justify-center flex-1 p-4 sm:p-12">
-          <h1 class="text-6xl md:text-8xl text-gray-800 font-montserrat">XLOG</h1>
+          <h1 class="text-5xl sm:text-7xl md:text-8xl text-gray-800 font-montserrat">XLOG</h1>
           <p class="text-lg md:text-xl text-gray-600 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos magni aliquid repellendus amet laborum tenetur fugiat beatae cupiditate numquam eligendi aut nihil quis distinctio, at, possimus tempore animi sequi.</p>
         <div class="flex items-center">
             <img src="assets/images/arrow.png" alt="" class="h-2 transform rotate-180">
@@ -80,12 +83,14 @@
         </div>
       </div>
 
+      <hr class=" mx-96">
+
       <div class="flex flex-col-reverse md:flex-row md:p-12 mb-2">
         <div class="flex-1 flex justify-center items-center">
           <img src="assets/images/clipart.png" alt="">
         </div>
         <div class="flex flex-col justify-center flex-1 p-4 sm:p-12">
-          <h1 class="text-6xl md:text-8xl text-gray-800 font-montserrat text-right">XLOG</h1>
+          <h1 class="text-5xl sm:text-7xl md:text-8xl text-gray-800 font-montserrat text-right">XLOG</h1>
           <p class="text-lg md:text-xl text-gray-600 mb-2 text-right"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos magni
             aliquid repellendus amet laborum tenetur fugiat beatae cupiditate numquam eligendi aut nihil quis distinctio, at,
             possimus tempore animi sequi.</p>
@@ -96,9 +101,11 @@
         </div>
       </div>
 
+      <hr class=" mx-96">
+
       <div class="md:flex md:p-12 mb-2">
         <div class="flex flex-col justify-center flex-1 p-4 p-4 sm:p-12">
-          <h1 class="text-6xl md:text-8xl text-gray-800 font-montserrat">XLOG</h1>
+          <h1 class="text-5xl sm:text-7xl md:text-8xl text-gray-800 font-montserrat">XLOG</h1>
           <p class="text-lg md:text-xl text-gray-600 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
             quos magni aliquid repellendus amet laborum tenetur fugiat beatae cupiditate numquam eligendi aut nihil quis
             distinctio, at, possimus tempore animi sequi.</p>
@@ -111,13 +118,15 @@
           <img src="assets/images/clipart.png" alt="">
         </div>
       </div>
+
+      <hr class=" mx-96">
       
       <div class="flex flex-col-reverse md:flex-row md:p-12 mb-2">
         <div class="flex-1 flex justify-center items-center">
           <img src="assets/images/clipart.png" alt="">
         </div>
         <div class="flex flex-col justify-center flex-1 p-4 p-4 sm:p-12">
-          <h1 class="text-6xl md:text-8xl text-gray-800 font-montserrat text-right">XLOG</h1>
+          <h1 class="text-5xl sm:text-7xl md:text-8xl text-gray-800 font-montserrat text-right">XLOG</h1>
           <p class="text-lg md:text-xl text-gray-600 mb-2 text-right"> Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Iusto quos magni
             aliquid repellendus amet laborum tenetur fugiat beatae cupiditate numquam eligendi aut nihil quis distinctio, at,
@@ -129,9 +138,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class=" bg-dark z-10 relative" id="about">
+  <article class=" bg-dark z-10 relative" id="about">
     <div class="container m-auto relative md:flex h-full">
       <div class="h-12 w-40 bg-gray-600 absolute right-0"></div>
       <div class="h-12 w-40 bg-gray-600 absolute left-0 bottom-0"></div>
@@ -141,11 +150,11 @@
           </h1>
           <div>
             <div class="w-full h-4 bg-primary mb-3"></div>
-            <p class="w-full text-white">
+            <p class="w-full text-white font-benchnine text-2xl">
               Mark Daquis is a Software developer with over 3 years of industry experience, including jobs at large
               technology
               and
-              retail companies.
+              retail companies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente ea tempora nulla aspernatur explicabo molestias inventore recusandae ducimus non.
             </p>
           </div>
         </div>
@@ -156,69 +165,71 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
  
-  <section class=" bg-gray-300 pt-12 md:px-12 pb-12 relative" id="competencies">    
+  <article class=" bg-gray-50 md:px-12 relative" id="competencies">   
+     
     <div class="container m-auto relative">
-      <div class="md:flex justify-end h-full w-full">
-        <div class="absolute w-10 h-10 bg-gray-600 top-36 left-0"></div>
-        <div class="flex flex-1"></div>
-        <div class=" px-12 pb-10 box flex-1">
-          <h1 class=" text-4xl font-benchnine text-white mb-10 text-right text-primary">COMPETENCIES<span
+      <div class="md:flex h-full w-full">
+        <div class="absolute w-10 h-10 bg-gray-600 top-10 left-0"></div>
+        <div class="px-12 md:px-24 py-10 box flex-1">
+          <h1 class=" text-4xl font-benchnine text-white mb-10 text-primary">COMPETENCIES<span
               class="text-dark">.</span>
           </h1>
           <div class="mb-5">
-            <h1 class=" text-lg font-benchnine mb-2 text-right text-primary uppercase">Backend
+            <h1 class=" text-lg font-benchnine mb-2  text-primary uppercase">Backend
             </h1>
-            <p class=" text-2xl font-benchnine text-dark mb-5 text-right">NodeJs, ExpressJs, MySQL, REST, Firebase
+            <p class=" text-2xl font-benchnine text-dark mb-5 ">NodeJs, ExpressJs, MySQL, REST, Firebase
             </p>
           </div>
           <div class="mb-5">
-            <h1 class=" text-lg font-benchnine mb-2 text-right text-primary uppercase">FRONTEND
+            <h1 class=" text-lg font-benchnine mb-2  text-primary uppercase">FRONTEND
             </h1>
-            <p class=" text-2xl font-benchnine text-dark mb-5 text-right">HTML5, CSS3/SCSS, javascript, Angular, Ionic
+            <p class=" text-2xl font-benchnine text-dark mb-5 ">HTML5, CSS3/SCSS, javascript, Angular, Ionic
             </p>
           </div>
           <div class="mb-5">
-            <h1 class=" text-lg font-benchnine mb-2 text-right text-primary uppercase">MOBILE
+            <h1 class=" text-lg font-benchnine mb-2  text-primary uppercase">MOBILE
             </h1>
-            <p class=" text-2xl font-benchnine text-dark mb-5 text-right">IONIC Framework, Flutter/dart, Swift/SwiftUI
+            <p class=" text-2xl font-benchnine text-dark mb-5 ">IONIC Framework, Flutter/dart, Swift/SwiftUI
             </p>
           </div>
         </div>
+        <div class="flex flex-1"></div>
+
       </div>
     </div>
-  </section>
+  </article>
 
-  <section class="flex flex-col justify-center bg-dark pt-12 pb-8 px-12 md:px-24 relative z-10" id="contact">
+  <article class="flex flex-col justify-center bg-dark pt-12 pb-8 px-12 md:px-24 relative z-10" id="contact">
     
-      <div class="container mx-auto flex justify-start h-full wull">
-        <div class=" bg-dark md:pl-24 md:pr-4 md:py-10 box">
-          <h1 class=" text-6xl font-benchnine text-white mb-10  text-primary">CONTACT ME <span class="text-white">.</span>
+      <div class="container mx-auto flex justify-end h-full wull">
+        <div class=" bg-dark md:pr-12 pr-4 md:py-10 box">
+          <h1 class=" text-6xl font-benchnine text-white mb-10 text-primary text-right">CONTACT ME <span class="text-white">.</span>
           </h1>
           <div class="mb-5">
-            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase">Mailing Address
+            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase text-right">Mailing Address
             </h1>
-            <p class=" text-xl font-benchnine text-white mb-5 ">#2285 Rosal St. Batista Subdivision Brgy. San Jose 
+            <p class=" text-xl font-benchnine text-white mb-5 text-right">#2285 Rosal St. Batista Subdivision Brgy. San Jose 
               Biñan City, Laguna
             </p>
           </div>
           <div class="mb-5">
-            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase">Email Address
+            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase text-right">Email Address
             </h1>
-            <p class=" text-xl font-benchnine text-white mb-5 ">marcusdaquis@icloud.com
+            <p class=" text-xl font-benchnine text-white mb-5 text-right">marcusdaquis@icloud.com
             </p>
           </div>
           <div class="mb-5">
-            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase">Contact Number
+            <h1 class=" text-2xl font-benchnine mb-2  text-primary uppercase text-right">Contact Number
             </h1>
-            <p class=" text-xl font-benchnine text-white mb-5 ">(+63) 998 981 2159
+            <p class=" text-xl font-benchnine text-white mb-5 text-right">(+63) 998 981 2159
             </p>
           </div>
       </div>
     </div>
     
-  </section>
+  </article>
 
 
   <footer class=" p-4 border-t border-gray-400 font-benchnine z-10 relative bg-dark">
