@@ -17,6 +17,24 @@ export class AppComponent {
   @ViewChild('navs',{ static: true }) navs!: ElementRef<HTMLDivElement>;
   @ViewChild('occupation', { static: true }) occupation!: ElementRef<HTMLDivElement>;
 
+  @ViewChild('project1', { static: true }) project1!: ElementRef<HTMLDivElement>;
+  @ViewChild('project2', { static: true }) project2!: ElementRef<HTMLDivElement>;
+  @ViewChild('project3', { static: true }) project3!: ElementRef<HTMLDivElement>;
+  @ViewChild('project4', { static: true }) project4!: ElementRef<HTMLDivElement>;
+
+  @ViewChild('projectDesc1', { static: true }) projectDesc1!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectDesc2', { static: true }) projectDesc2!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectDesc3', { static: true }) projectDesc3!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectDesc4', { static: true }) projectDesc4!: ElementRef<HTMLDivElement>;
+
+  @ViewChild('projectImg1', { static: true }) projectImg1!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectImg2', { static: true }) projectImg2!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectImg3', { static: true }) projectImg3!: ElementRef<HTMLDivElement>;
+  @ViewChild('projectImg4', { static: true }) projectImg4!: ElementRef<HTMLDivElement>;
+
+
+  
+
 
   title = 'mark-daquis-portfolio';
   isNavToggled: boolean = false;
@@ -26,8 +44,10 @@ export class AppComponent {
     public router: Router) {}
 
   ngOnInit(): void {
+    
     this.initialAnimation();
-    this.initFirstSetionScroll()
+    this.initHomeSetionScroll();
+    this.initProjectSectionScroll();
   }
 
   toggleDrawer() {
@@ -41,10 +61,10 @@ export class AppComponent {
       y: -20,
       stagger: .5,
       delay: 0.5
-    })
+    });
   }
 
-  initFirstSetionScroll() {
+  initHomeSetionScroll() {
     gsap.to(this.navs.nativeElement, {
       scrollTrigger: {
         trigger: this.home.nativeElement,
@@ -83,8 +103,86 @@ export class AppComponent {
     ScrollTrigger.create({
       trigger: this.home.nativeElement,
       start: "top top",
-      // pinSpacing: false,
       pin: true,
     });
   }
+
+  initProjectSectionScroll() {
+
+    const elemList = [
+      {
+        project: this.project1,
+        desc: this.projectDesc1,
+        img: this.projectImg1,
+      },
+      {
+        project: this.project2,
+        desc: this.projectDesc2,
+        img: this.projectImg2,
+      },
+      {
+        project: this.project3,
+        desc: this.projectDesc3,
+        img: this.projectImg3,
+      },
+      {
+        project: this.project4,
+        desc: this.projectDesc4,
+        img: this.projectImg4,
+      }
+    ]
+
+    elemList.forEach((element) => {
+      gsap.fromTo(element.desc.nativeElement,
+        {
+            x : 0,
+            y : -100,
+            autoAlpha: 0
+        }, 
+        {
+          scrollTrigger: {
+            trigger: element.project.nativeElement,
+            start: "top bottom",
+            scrub: 2,
+            toggleActions: "restart pause reverse pause",
+          
+            //   onEnter: function() { animateFrom(elem) }, 
+          } as gsap.plugins.ScrollTriggerInstanceVars,
+          duration: 5, 
+          x: 0,
+          y: 0, 
+          autoAlpha: 1, 
+          ease: "expo", 
+          overwrite: "auto"
+       }
+      );
+
+      gsap.fromTo(element.img.nativeElement,
+        {
+            x : element.img.nativeElement.classList.contains('from-left') ? -100 : 100,
+            y : 0,
+            autoAlpha: 0
+        }, 
+        {
+          scrollTrigger: {
+            trigger: element.project.nativeElement,
+            start: "top bottom",
+            scrub: 2,
+            toggleActions: "restart pause reverse pause",
+          
+            //   onEnter: function() { animateFrom(elem) }, 
+          } as gsap.plugins.ScrollTriggerInstanceVars,
+          duration: 5, 
+          x: 0,
+          y: 0, 
+          autoAlpha: 1, 
+          ease: "expo", 
+          overwrite: "auto"
+       }
+      );
+    });
+  }
+
+  
+  
 }
